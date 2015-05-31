@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  Log2Server
+//
+//  Created by 倪 李俊 on 15/1/6.
+//  Copyright (c) 2015年 com.sinri. All rights reserved.
+//
+
+#ifndef Log2Server_PrefixHeader_pch
+#define Log2Server_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// Special For Log2Server
+// If you want to use DEFINE for short name function call in every code file without importing the header, import this header between __OBJC__ condition block as following.
+// If you do not import this line here, you have to import in every file using Log2Server.
+#import "Log2Server.h"
+
+#endif
+
+
+#endif
