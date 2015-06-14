@@ -22,6 +22,11 @@
     [Log2ServerWorker registerServiceWithDeviceSignature:@"Log2ServerFrameworkDemo" andServerApi:@"http://sinri.tk/Log2Server/Log2ServerDemo"];
     [Log2ServerWorker setDebugMode:YES];
     [Log2ServerWorker setUseDocumentStorage:NO];
+#ifdef DEBUG
+    [[Log2ServerWorker sharedInstance]setLogSyncInterval:60];
+#else
+    [[Log2ServerWorker sharedInstance]setLogSyncInterval:60*5];
+#endif
     
     SLog(@"Log2ServerFrameworkDemo is Okay now if you have found these words on your server.");
     
