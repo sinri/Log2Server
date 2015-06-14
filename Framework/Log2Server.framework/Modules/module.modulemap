@@ -1,0 +1,6 @@
+framework module Log2Server {
+  umbrella header "Log2Server.h"
+
+  export *
+  module * { export * }
+}
