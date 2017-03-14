@@ -53,5 +53,3 @@ class Log2Server
 	}
 
 }
-
-?>
